@@ -178,7 +178,6 @@
         }
         window.addEventListener('resize', resize);
         requestAnimationFrame(resize);
-her
         // First file drop is CT
         function isSegmentationFile(name) {
             return /label|seg/i.test(name);
@@ -225,6 +224,7 @@ her
                 await loadFile(file);
             }
         });
+
         const fileInput = document.createElement('input');
         fileInput.type = 'file';
         fileInput.accept = '.nii,.gz';
